@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Module Test</title>
+  </head>
+  <body>
+    <main>
+      <div class="playingArea">
+        <div id="scoreboard">
+          <div class="heading">
+            <p>rock</p>
+            <p>paper</p>
+            <p>scissors</p>
+          </div>
+          <div class="score-box">
+            <div class="score">
+              <h3>computer<br />score</h3>
+              <p class="count cscore">0</p>
+            </div>
+            <div class="score">
+              <h3>your<br />score</h3>
+              <p class="count uscore">0</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="gamingArea">
+          <div class="line-container">
+            <button  class="choice-button rockBtn" data-choose="rock">
+              <img src="blue.jpg" class="circle" alt="border" />
+              <img src="rock.png" alt="" class="base rock-img" srcset="" />
+            </button>
+            <button  class="choice-button scissorBtn" data-choose="scissor">
+              <img src="purple.jpg" class="circle" alt="border" />
+              <img src="scissor.png" alt="" class="base scissor-img" srcset="" />
+            </button>
+            <button  class="choice-button paperBtn" data-choose="paper">
+              <img src="yellow.jpg" class="circle" alt="border" />
+              <img  src="paper.png" alt="" class="base paper-img" srcset="" />
+            </button>
+            <div class="option-line first-line"></div>
+
+            <div class="option-line second-line"></div>
+
+            <div class="option-line third-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-container">
+        
+        <div class="gameRules gameRulesBox">
+          <h3>Game Rules</h3>
+          <button class="close-button">X</button>
+          <ul>
+            <li><span>Rock beats scissors, scissors beat paper, and paper beats rock</span></li>
+            <li><span>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors”</span> </li>
+            <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span> </li>
+            <li><span>If both players lay down the same hand, each player lays down another hand</span> </li>
+          </ul>
+        </div>
+        <div class="corner">
+          <button class="rules ">RULES</button>
+           
+          <button class="next nextBtnRemove nextBtn">NEXT</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
